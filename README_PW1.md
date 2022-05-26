@@ -1,3 +1,8 @@
+#Python Web Service From Idea to Production part 1
+course by Tero Karvinen (more info:https://terokarvinen.com/courses/)
+
+Our first exercise was to create a django development database. I followed these instructions from Tero: https://terokarvinen.com/2022/django-instant-crm-tutorial/ 
+
 first I'm installing virtualenv:
 ```
 josefina@x230:~$ sudo apt-get -y install virtualenv

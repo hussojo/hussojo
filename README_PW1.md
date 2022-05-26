@@ -1,4 +1,4 @@
-firs I'm installing virtualenv:
+first I'm installing virtualenv:
 ```
 josefina@x230:~$ sudo apt-get -y install virtualenv
 ```

@@ -15,4 +15,7 @@ class Book(models.Model):
         return self.reader_name
         return self.comment
 
+    def get_absolute_url(self):
+        return f"/book/{self.pk}"
+
     

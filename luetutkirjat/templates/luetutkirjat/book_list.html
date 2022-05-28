@@ -1,0 +1,22 @@
+{% extends "luetutkirjat/base.html" %}
+
+{%block content%}
+<h1>Luetut kirjat</h1>
+
+{% for book in book_list %}
+
+<p>Name:
+<a href="{{ book.get_absolute_url }}">
+{{book.name}}
+</a>
+<a href="{{ book.get_absolute_url }}/update">Update</a>
+</p>
+{% endfor %}
+
+<p>
+<a href="new">
+Lisää uusi kirja
+</a>
+</p>
+
+{%endblock content%}

@@ -1,3 +1,19 @@
-from django.shortcuts import render
+from django.views.generic import ListView, DetailView, CreateView, UpdateView
+from . import models
 
-# Create your views here.
+class BookListView(ListView):
+    model = models.Book
+
+class BookDetailView(DetailView):
+    model = models.Book
+
+class BookCreateView(CreateView):
+    model = models.Book
+    fields ='__all__'
+    success_url = "/book/"
+
+class BookUpdateView(UpdateView):
+    model = models.Book
+    fields ='__all__'
+    success_url = "/book/"
+    
